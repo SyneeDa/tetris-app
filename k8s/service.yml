@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tetris-app-service
+  name: tetris-app
   namespace: default
 spec:
   type: NodePort  # or LoadBalancer if you are using a cloud provider
@@ -11,3 +11,6 @@ spec:
       nodePort: 8080  # Port exposed on the node (optional; if NodePort is selected)
   selector:
     app: tetris-app
+
+
+  
