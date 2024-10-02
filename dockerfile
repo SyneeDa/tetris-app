@@ -1,8 +1,8 @@
-# Use the official NGINX image
+# Dockerfile
 FROM nginx:alpine
 
-# Copy all necessary files into the NGINX HTML directory
-COPY . /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
+COPY app.js /usr/share/nginx/html/app.js
+COPY style.css /usr/share/nginx/html/style.css
 
-# Expose port 80
 EXPOSE 80
