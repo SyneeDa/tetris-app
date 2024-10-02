@@ -17,3 +17,4 @@ spec:
         image: my-tetris-app # Ensure this matches the name of your built image
         ports:
         - containerPort: 80 # This should match the port exposed in your Dockerfile
+        # The nodePort should be in the range of 30000-32767
